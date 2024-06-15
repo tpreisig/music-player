@@ -58,3 +58,95 @@ body{
 .container .disk{
     max-width: 120px;
 }
+
+.container .disk .active{
+    animation: rotate 12s linear 0s infinite forwards;
+}
+
+.container .disk .cover{
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background: url("assets/cover1.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.container .disk .circle{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 62px;
+    top: 58px;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.container .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: darkblue;
+    width: 450px;
+    height: 100px;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(255,255,255,0.3);
+}
+
+.container .controls #play{
+    background-color: skyblue;
+    color: #fff;
+    padding: 15px 17px 14px 18px;
+    font-size: 28px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+}
+.container .controls #play:hover{
+    background-color: rgb(74, 169, 207);
+}
+
+.container .controls i{
+    padding: 30px 5px;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(125, 111, 214);
+    transition: all 0.3s ease-in-out;
+}
+
+.container .controls i:hover{
+    color: rgb(224, 221, 243);
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    60%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background: rgb(252, 239, 246);
+    }
+    
+}
+@media screen and (max-width: 567px){
+    body{
+        background: rgb(229, 244, 250);
+        transform: scale(0.85) translate(1%, -20%);
+    }  
+}
