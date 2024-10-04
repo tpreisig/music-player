@@ -18,7 +18,7 @@ body{
 }
 
 .container .song-info{
-    background-color: #000;
+    background: linear-gradient(#000, #a0a0a0);
     margin: 0 15px;
     padding: 15px 15px 5px 150px;
     border-radius: 15px 15px 0 0;
@@ -95,7 +95,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: darkblue;
+    background: linear-gradient(cornflowerblue, blue);
     width: 450px;
     height: 100px;
     margin-top: -2px;
@@ -121,7 +121,7 @@ body{
     padding: 30px 5px;
     font-size: 35px;
     cursor: pointer;
-    color: rgb(125, 111, 214);
+    color: rgb(111, 214, 130);
     transition: all 0.3s ease-in-out;
 }
 
