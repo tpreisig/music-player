@@ -1,6 +1,6 @@
 # Music Player
 
-Music palyer as fully functional web application written in pure JavaScript. This example demonstrates how to create a music player with basic functionality such as play, pause, next and previous track, and display of the current song's title and artist.
+Music palyer as fully functional web application written in Vanilla JavaScript. This example demonstrates how to create a music player with basic functionality such as play, pause, next and previous track, and display of the current song's title and artist.
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
